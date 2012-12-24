@@ -1,5 +1,5 @@
-WebJar for WEBJAR_NAME
+WebJar for jQuery Easing Plugin
 
 More info: http://webjars.org
 
-Upstream: WEBJAR_URL
+Upstream: http://gsgd.co.uk/sandbox/jquery/easing/
