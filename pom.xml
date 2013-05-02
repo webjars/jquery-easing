@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-easing</artifactId>
-    <version>1.3-1</version>
+    <version>1.3-2-SNAPSHOT</version>
     <name>jQuery Easing Plugin</name>
     <description>WebJar for jQuery Easing Plugin</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/jquery-easing</url>
         <connection>scm:git:https://github.com/webjars/jquery-easing.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-easing.git</developerConnection>
-        <tag>jquery-easing-1.3-1</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <dependencies>
