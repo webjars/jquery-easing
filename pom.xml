@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>jquery-easing</artifactId>
-    <version>1.4.1-SNAPSHOT</version>
+    <version>1.4.1</version>
     <name>jQuery Easing Plugin</name>
     <description>WebJar for jQuery Easing Plugin</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/jquery-easing</url>
         <connection>scm:git:https://github.com/webjars/jquery-easing.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/jquery-easing.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>jquery-easing-1.4.1</tag>
     </scm>
     
     <dependencies>
@@ -89,13 +89,13 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="download archive" />
+                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip" />
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/jquery.easing-${version.unsnapshot}" includes="*.js"/>
+                                    <fileset dir="${project.build.directory}/jquery.easing-${version.unsnapshot}" includes="*.js" />
                                 </move>
                             </target>
                         </configuration>
